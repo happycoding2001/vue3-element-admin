@@ -8,6 +8,8 @@ import 'element-plus/theme-chalk/index.css'
  
 import {setupStore} from '@/store';
  
+
+
 const app = createApp(App);
 // 全局挂载
 setupStore(app);
