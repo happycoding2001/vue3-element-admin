@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import HelloWorld from "@/components/HelloWorld.vue";
+// import.meta.env. 智能提示
 </script>
 
 <template>
