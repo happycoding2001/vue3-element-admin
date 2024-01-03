@@ -2,6 +2,7 @@
   <div>home</div>
   <div>
     <svg-icon icon-class="jd" />
+    <svg-icon icon-class="jt" />
   </div>
   <el-button @click="handleLogin" type="primary">确定</el-button>
 </template>
