@@ -2,6 +2,8 @@
 import {UserConfig, ConfigEnv, loadEnv} from 'vite'
 import vue from '@vitejs/plugin-vue'
 import path from 'path'
+
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons';
  
 export default ({command, mode}: ConfigEnv): UserConfig => {
   // 获取 .env 环境配置文件
@@ -10,7 +12,13 @@ export default ({command, mode}: ConfigEnv): UserConfig => {
   return (
       {
         plugins: [
-          vue()
+          vue(),
+          createSvgIconsPlugin({
+            // 指定需要缓存的图标文件夹
+            iconDirs: [path.resolve(process.cwd(), 'src/assets/icons')],
+            // 指定symbolId格式
+            symbolId: 'icon-[dir]-[name]',
+          })
         ],
         // 本地反向代理解决浏览器跨域限制
         server: {

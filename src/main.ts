@@ -7,7 +7,8 @@ import ElementPlus from 'element-plus'
 import 'element-plus/theme-chalk/index.css'
  
 import {setupStore} from '@/store';
- 
+// svg
+import 'virtual:svg-icons-register'; 
 
 
 const app = createApp(App);
