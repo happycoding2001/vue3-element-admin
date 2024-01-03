@@ -10,12 +10,19 @@
   },
   "dependencies": {
     "@element-plus/icons-vue": "^2.3.1",
+    "@wangeditor/editor-for-vue": "^5.1.12",
+    "better-scroll": "^2.5.1",
+    "echarts": "^5.4.3",
     "element-plus": "^2.4.4",
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "vue-router": "^4.0.13"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
     "@vitejs/plugin-vue": "^4.5.2",
+    "path-browserify": "^1.0.1",
+    "path-to-regexp": "^6.2.1",
+    "sass": "^1.69.7",
     "typescript": "^5.2.2",
     "vite": "^5.0.8",
     "vue-tsc": "^1.8.25"
